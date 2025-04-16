@@ -1,0 +1,211 @@
+:root {
+    /* Content Colors */
+    --content-primary: #FFFFFF;
+    --content-secondary: #C7C9CC;
+    --content-tertiary: #D9D9D9;
+    --content-brand: #C58DE7;
+    --color-inverse: #030203;
+
+    /* Background Colors */
+    --background-primary: #020202;
+    --background-secondary: #111012;
+    --background-tertiary: #24222E;
+    --background-brand: #C58DE7;
+    --background-gray: #3D3D3D;
+
+    /* Accent Colors */
+    --accent-pink: #D586E0;
+    --accent-blue: #91A1FA;
+    --accent-green: #77C0AA;
+    --accent-lime: #D1DC97;
+    --accent-red: #E9A9B3;
+
+    /* Gradient Colors */
+    --gradient-border: linear-gradient(14.84deg, #D586E0 45.79%, #91A1FA 94.98%);
+    --gradient-background: linear-gradient(98.93deg, #D586E0 0%, #91A1FA 100%);
+    --gradient-content: linear-gradient(100%, #C7C9CC 0%, #3D3D3D 100%);
+}
+
+/* Content Colors */
+.text-content-primary {
+    color: var(--content-primary);
+}
+
+.text-content-secondary {
+    color: var(--content-secondary);
+}
+
+.text-content-tertiary {
+    color: var(--content-tertiary);
+}
+
+.text-content-brand {
+    color: var(--content-brand);
+}
+
+.text-color-inverse {
+    color: var(--color-inverse);
+}
+
+/* Background Colors */
+.bg-background-primary {
+    background-color: var(--background-primary);
+}
+
+.bg-background-secondary {
+    background-color: var(--background-secondary);
+}
+
+.bg-background-tertiary {
+    background-color: var(--background-tertiary);
+}
+
+.bg-background-brand {
+    background-color: var(--background-brand);
+}
+
+.bg-background-gray {
+    background-color: var(--background-gray);
+}
+
+/* Accent Colors */
+.text-accent-pink {
+    color: var(--accent-pink);
+}
+
+.text-accent-blue {
+    color: var(--accent-blue);
+}
+
+.text-accent-green {
+    color: var(--accent-green);
+}
+
+.text-accent-lime {
+    color: var(--accent-lime);
+}
+
+.text-accent-red {
+    color: var(--accent-red);
+}
+
+.bg-accent-pink {
+    background-color: var(--accent-pink);
+}
+
+.bg-accent-blue {
+    background-color: var(--accent-blue);
+}
+
+.bg-accent-green {
+    background-color: var(--accent-green);
+}
+
+.bg-accent-lime {
+    background-color: var(--accent-lime);
+}
+
+.bg-accent-red {
+    background-color: var(--accent-red);
+}
+
+/* Gradient Utilities */
+.gradient-border {
+    background: var(--gradient-border);
+}
+
+.gradient-background {
+    background: var(--gradient-background);
+}
+
+.gradient-content {
+    background: var(--gradient-content);
+}
+
+/* Typography */
+.display-large {
+    font-family: 'Sora', sans-serif;
+    font-size: 72px;
+    line-height: 130%;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.display-medium {
+    font-family: 'Sora', sans-serif;
+    font-size: 40px;
+    line-height: 130%;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.display-small {
+    font-family: 'Sora', sans-serif;
+    font-size: 32px;
+    line-height: 130%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.overline-color {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph-large {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.paragraph-medium {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.paragraph-small {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.label-medium {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+.label-small {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+/* Base styles */
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: var(--background-primary);
+    color: var(--content-primary);
+
+    /* Para navegadores Webkit (Chrome, Safari, Edge) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Para Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+} 
