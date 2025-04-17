@@ -1,3 +1,17 @@
+/* Seus estilos personalizados aqui */
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 :root {
     /* Content Colors */
     --content-primary: #FFFFFF;
@@ -14,14 +28,14 @@
     --background-gray: #3D3D3D;
 
     /* Accent Colors */
-    --accent-pink: #D586E0;
+    --accent-pink: #D586E0; 
     --accent-blue: #91A1FA;
     --accent-green: #77C0AA;
     --accent-lime: #D1DC97;
     --accent-red: #E9A9B3;
 
     /* Gradient Colors */
-    --gradient-border: linear-gradient(14.84deg, #D586E0 45.79%, #91A1FA 94.98%);
+    --gradient-border: linear-gradient(to right, #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%, #91A1FA 100%);
     --gradient-background: linear-gradient(98.93deg, #D586E0 0%, #91A1FA 100%);
     --gradient-content: linear-gradient(100%, #C7C9CC 0%, #3D3D3D 100%);
 }
@@ -114,6 +128,14 @@
     background: var(--gradient-border);
 }
 
+/* Nova classe para efeito de borda com gradiente */
+.button-gradient-border {
+  border: solid 2px transparent; /* Defina a largura da borda */
+  background-image: linear-gradient(var(--background-primary), var(--background-primary)), var(--gradient-border); /* Cor de fundo interna, depois o gradiente */
+  background-origin: border-box; /* Começa o background a partir da borda */
+  background-clip: padding-box, border-box; /* Corta o primeiro background (cor sólida) no padding e o segundo (gradiente) na borda */
+}
+
 .gradient-background {
     background: var(--gradient-background);
 }
@@ -203,9 +225,8 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* Para Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
 } 
+
+.hidden{
+    display: none;
+}
