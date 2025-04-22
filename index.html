@@ -91,12 +91,18 @@
 
                     <!-- Checkbox não repetir número -->
                     <div class="flex items-center gap-2">
-                        <div class="w-6 h-6 rounded-full flex items-center justify-center">
-                            <input type="checkbox" class="opacity-0 absolute" />
-                            <img class="" src="assets/svg/toggle.svg" alt="">
-                        </div>
-                        <label class="text-white">Não repetir número</label>
-                    </div>
+                        <!-- Toggle vem primeiro -->
+                        <label class="relative inline-block w-10 h-5">
+                          <input id="repetirNumero" type="checkbox" class="peer opacity-0 w-0 h-0" />
+                          <span class="absolute top-0 left-0 right-0 bottom-0 bg-gray-400 rounded-full transition duration-300 peer-checked:bg-gradient-to-r peer-checked:from-purple-400 peer-checked:to-blue-400"></span>
+                          <span class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition duration-300 peer-checked:translate-x-5"></span>
+                        </label>
+                      
+                        <!-- Texto ao lado do botão -->
+                        <label for="repetirNumero" class="text-white text-sm">Repetir Numero</label>
+                      </div>
+                      
+                      
 
                     <!-- Botão Sortear -->
                     <button type="submit" class="w-full bg-background-tertiary text-white label-medium py-4 rounded-lg flex items-center justify-center gap-2 transition-colors relative group">
@@ -115,12 +121,12 @@
                         <h2 class="label-medium text-content-primary">Resultado do Sorteio</h2>
                         <span class="overline-color text-content-secondary">1º Resultado</span>
                     </div>
-                    <ul class="flex gap-4 justify-center">
+                    <ul id="listaNumeros" class="flex flex-wrap gap-4 justify-center">
                         <li class="w-[84px] text-center text-content-brand font-['Roboto_Mono'] font-bold text-[48px] leading-[150%] tracking-normal">23</li>
                         <li class="w-[84px] text-center text-content-brand font-['Roboto_Mono'] font-bold text-[48px] leading-[150%] tracking-normal">12</li>
                     </ul>
 
-                    
+
                     <button type="submit" class="w-full bg-background-tertiary text-white label-medium py-4 rounded-lg flex items-center justify-center gap-2 transition-colors relative group">
                         <div class="absolute inset-0 rounded-lg bg-gradient-to-r from-[#D586E0] to-[#91A1FA] p-[2px] animate-[gradientMove_4s_linear_infinite] group-hover:opacity-100 opacity-0 transition-opacity bg-[length:200%_100%]">
                             <div class="h-full w-full rounded-lg bg-background-tertiary"></div>
